@@ -1,0 +1,24 @@
+/* Sur les écrans, quand la largeur de la fenêtre fait au maximum 425px */
+@media screen and (max-width:425px) {
+    #conteneur .col-4{
+        width: 98%;
+        margin:1%
+    }
+    #conteneur{
+        flex-direction:column;
+    }
+}
+                
+
+
+
+
+
+/* Sur les écrans, quand la largeur de la fenêtre fait au maximum 1024px */
+@media all and (max-width:1024px) {
+    #main_container{
+        width: 80%;
+        padding:5%;
+    }
+}                       
+                    

@@ -1,0 +1,56 @@
+.product-card__like-button{
+    padding: 0 10px;
+    background-color:#fff;
+    border:1px solid grey;
+}
+
+.product-card__like-button--dark{
+    padding: 0 10px;
+    background-color:#000;
+    color:#000;
+    border:1px solid grey;
+}
+                    
+p, h1, span{
+    color : blue;
+    /* Tous les balises p, h1 et span auront une couleur bleue*/
+}
+                
+#monContainer > p{
+    color : red;
+    /* Les textes 1 et 2 auront une couleur rouge mais pas la 3 ni la 4*/
+}
+                    
+.maClasse{
+    font-size :  15px; /* La taille de la police en px, em, %… */
+    font-style : normal; /* Le style d’écriture (normal, italic, oblique) */
+    font-weight : bold; /* La graisse du texte (normal, bold, light, 100, 200, ...)*/
+    font-family : 'Roboto'; /* La typographie (voir avec Google Fonts)*/
+    text-align : center; /* Alignement du texte (center, right, left,…) */
+
+}
+                    
+
+.maClasse{
+    color : white; /* avec un mot clé */
+    color : #FFFFFF; /* en hexadecimal : les valeurs vont de 0 à F (raccourci ici : #FFF) */
+    color : rgb(255,255,255); /* en RGB (Red Green Blue) : les valeurs vont de 0 à 255 */
+
+}
+                    
+
+.bg-rouge{
+ 	background-color : red; /* Met un fond rouge */
+}					
+.bg-noir-transparent{
+	background-color : rgba(0,0,0,0.5) /* Met un fond noir à 50% d’opacité */
+}
+.bg-paysage{ 
+	background-image : url("images/paysage.jpg"); /* Met l’image paysage en fond */	
+	background-repeat : no-repeat; 	/* Gère si l’on répète l’image , ex : repeat-x/ repeat-y/ no-repeat/… */
+	background-position : right center;	/* Gère la position de l’image, ex : center/ top/ left/ right/ bottom */
+	background-size : cover; /* Gère la taille de l’image, ex : cover /contains / 30% … */
+ }
+                    
+
+ 

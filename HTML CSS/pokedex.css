@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 48px 24px;
+    background: #345582;
+    color: #202a35;
+    font-family: Arial, sans-serif;
+}
+
+.pokedex {
+    width: min(100%, 1100px);
+    margin: 0 auto;
+}
+
+h1 {
+    margin: 32px;
+    color: #5d5dca;
+    text-align: center;
+}
+
+.cartes-pokemon {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    border-radius: 16px 16px 0 0;
+}
+
+.carte-pokemon {
+    overflow: hidden;
+    border-radius: 16px;
+    background: var(--fond-carte, #fff);
+    
+}
+
+.carte-graine {
+    --fond-carte: #f0f7e9;
+    --fond-image: #2a5009;
+    --couleur-titre: #527a36;
+}
+
+.carte-salam {
+    --fond-carte: #fff2e8;
+    --fond-image: #da7324;
+    --couleur-titre: #bd5a28;
+}
+
+.carte-puce {
+    --fond-carte: #94d1f3;
+    --fond-image: #d2eaf5;
+    --couleur-titre: #287394;
+}
+
+.carte-pokemon img {
+    display: block;
+    width: 100%;
+    height: 220px;
+    padding: 16px;
+    background: var(--fond-image, #e8f0fa);
+    object-fit: contain;
+}
+
+.statistiques {
+    padding: 20%;
+    border:solid 1px #000000;
+    border-radius: 25%;
+    border-color: var(--fond-image, #547daf);
+}
+
+.statistiques h2 {
+    margin: 0 0 10px;
+    color: var(--couleur-titre, #315b91);
+}
+
+.statistiques dl {
+    margin: 0;
+}
+
+.statistique {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid rgb(32 42 53 / 14%);
+    border-radius: 4px;
+}
+
+.statistique:last-child {
+    border-bottom: 0;
+}
+
+.statistique dd {
+    margin: 0;
+    font-weight: 700;
+}
+
+@media (max-width: 700px) {
+    .cartes-pokemon {
+        grid-template-columns: 1fr;
+    }
+
+    .carte-pokemon img {
+        height: 200px;
+    }
+}
+/* .cartes-pokemon {   /* adapte au nom de ta classe */
+  transform:
+    /* perspective(55px)            
+    translate3d(-10px, 5px, 10px)  */
+    skew(10deg)                 
+    rotate(-15deg)               
+    scale(1.25);                
+/* } */ */
+
+/* .carte-puce {   /* adapte au nom de ta classe */
+  transform:
+    /* /* perspective(55px)             */
+    translate3d(-10px, 5px)
+    skew(10deg)                 
+    rotate(-15deg)               
+    scale(1.25);                
+} */
+
+
+.carte-puce {   /* adapte au nom de ta classe */
+  display: inline-block;          /* transform ne marche pas sur un élément inline */
+  transition: transform 0.5s ease; /* à mettre sur l'état de base */
+}
+
+.carte-puce:hover {
+  transform:
+    perspective(30px)
+    translate3d(-10px, 5px, 10px)
+    skew(10deg)
+    rotate(-15deg)
+    scale(1.25);
+}
+
+
+
+
+.carte-graine {   /* adapte au nom de ta classe */
+  display: inline-block;          /* transform ne marche pas sur un élément inline */
+  transition: transform 0.5s ease; /* à mettre sur l'état de base */
+}
+
+.carte-graine {
+  transform:
+    perspective(30px)
+    translate3d(-10px, 5px, 10px)
+    skew(10deg)
+    rotate(-15deg)
+    scale(1.25);
+}
+
+
+
+
+
+
+
+.carte-salam {   /* adapte au nom de ta classe */
+  display: inline-block;          /* transform ne marche pas sur un élément inline */
+  transition: transform 0.5s ease; /* à mettre sur l'état de base */
+}
+
+.carte-salam:hover {
+  transform:
+    perspective(30px)
+    translate3d(-10px, 5px, 10px)
+    skew(10deg)
+    rotate(-15deg)
+    scale(1.25);
+}
