@@ -1,0 +1,12 @@
+Ouvrir le terminal :
+winget install --id PHP.PHP.NTS.8.4 --exact
+
+Contrôler que la version de php a  bien été installé :
+php -v
+
+Télécharger les extensions suivantes : 
+- PHP Server
+- PHP Intelephense
+
+Lancer le site : 
+Aller sur le fichier index.php > Clic droit > PHP Server : Serve project

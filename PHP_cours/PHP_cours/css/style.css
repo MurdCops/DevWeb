@@ -1,0 +1,12 @@
+.tableMultiplication > div{
+    border-radius: 10px;
+    margin: 0 10px;
+}
+
+.tableMultiplication p {
+    margin: 0;
+}
+
+.tableElem{
+    background-color: red;
+}

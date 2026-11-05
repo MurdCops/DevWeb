@@ -1,0 +1,15 @@
+{
+    "spellright.language": [
+        "fr"
+    ],
+    "spellright.documentTypes": [
+        "markdown",
+        "latex",
+        "plaintext",
+        "php"
+    ],
+    "cSpell.language": "en,fr,fr-FR,lorem,en-US,en-GB",
+    "cSpell.enableFiletypes": [
+        "php"
+    ]
+}
